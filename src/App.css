@@ -1,0 +1,179 @@
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* colors */
+  --light-red : hsl(0, 100%, 67%);
+  --orangey : hsl(39, 100%, 56%);
+  --teal : hsl(166, 100%, 37%);
+  --cobalt : hsl(234, 85%, 45%);
+  /* bg */
+  --Light-slate-blue : hsl(252, 100%, 67%);
+  --Light-royal-blue: hsl(241, 81%, 54%);
+  --Violet-blue: hsla(256, 72%, 46%, 1);
+  --Persian-blue: hsla(241, 72%, 46%, 0);
+
+  /* Neutral */
+
+--White: hsl(0, 0%, 100%);
+--Pale-blue: hsl(221, 100%, 96%);
+--Light-lavender: hsl(241, 100%, 89%);
+--gray-blue: hsl(224, 30%, 27%);
+}
+
+@font-face {
+  font-family: 'variable_font';
+  src: url('/src/assets/fonts/HankenGrotesk-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'bold_font';
+  src: url('/src/assets/fonts/static/HankenGrotesk-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'extra_bold_font';
+  src: url('/src/assets/fonts/static/HankenGrotesk-ExtraBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'medium_font';
+  src: url('/src/assets/fonts/static/HankenGrotesk-Medium.ttf') format('truetype');
+}
+
+
+.summary{
+  background-color: var(--White);
+  padding: 10px;
+  width: 300px;
+  align-items: center;
+  justify-content: center;
+}
+ .summary h1 {
+  font-size: 18px;
+  text-align: left;
+  margin: 20px 10px;
+
+}
+body{
+  background-color:var(--Pale-blue);
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  height: 100vh; /* Full viewport height */
+  margin: 0; /* Remove default body margin */
+}
+
+
+.card {
+  height: 400px;
+  width: 600px;
+  display: flex;
+  border: 1px solid var(--White);
+  border-radius: 20px;
+  justify-content: space-between;
+  overflow: hidden; /* Ensures rounded corners are visible */
+}
+
+
+
+.result{
+  width: 300px;
+  background-color: var(--Light-royal-blue);
+  padding: 10px;
+  border: 1px solid var(--Light-royal-blue);
+  border-radius: 10px;
+}
+
+.result h1 {
+  color: var(--Light-lavender);
+  text-align: center;
+  font-size: 18px;  
+  margin: 20px 10px;
+}
+
+.result p {
+  color: var(--White);
+  text-align: center;
+}
+.item-list {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 20px 10px;
+  border-radius: 5px; /* Optional rounded corners */
+  background-color: var(--Light-slate-blue); /* Slight background for the items */
+
+}
+
+.item .name {
+  flex: 1;
+  display: flex;
+  gap: 10px;
+  text-align: left;
+  color: ;
+}
+
+.item .score {
+  text-align: right;
+}
+
+.circle {
+  background-color: var(--cobalt);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.average {
+  font-size: 50px; /* Large font for the average */
+  color: var(--White);
+  margin: 0;
+}
+
+.of-100 {
+  font-size: 16px;
+  color: var(--Light-lavender);
+  margin-top: 5px;
+}
+
+.footer{
+  text-align: center;
+  color: ali;
+  padding: 0px 25px;
+  color: var(--White);
+}
+
+.footer p{
+  font-size: 15px;
+  text-align: justify center;
+  color: var(--Light-lavender);
+}
+
+button {
+  padding: 10px 60px;
+  align-items: center;
+  display: flex;
+  margin: 30px auto;
+  border: 1px solid var(--White);
+  border-radius: 20px;
+  font-size: 1rem;
+  background-color: rgb(6, 6, 63);
+  color: var(--White);
+}
+
+button:hover {
+  background-color: var(--Light-royal-blue);
+}
